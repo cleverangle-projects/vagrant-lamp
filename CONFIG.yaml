@@ -4,7 +4,7 @@
 # | ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 
 # |                              ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
-local_domain : &local_domain    'mywebsite.local'
+local_domain : &local_domain    'lamp.local'
 private_ip   : &private_ip      '192.168.90.10'
 machine_name : &machine_name    'vag-lamp'
 machine_ram  : &machine_ram     'auto'
