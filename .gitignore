@@ -1,0 +1,31 @@
+# |
+# | ······ Folders
+# |
+.vagrant/
+www/
+share/
+html/
+
+# |
+# | ······ Ansible
+# |
+ansible/inventory
+playbook.retry
+
+# |
+# | ······ Wordpress
+# |
+*.wpress
+
+# |
+# | ······ Images
+# |
+*.gif
+*.jpg
+*.png
+*.ico
+
+# |
+# | ······ Logs
+# |
+*.log
