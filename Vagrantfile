@@ -73,7 +73,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
                 vb.customize ["modifyvm", :id, "--natdnsproxy1", "on"]
 
 
-                if server["ram"] = "auto"
+                if server["ram"] == "auto"
                     host = RbConfig::CONFIG['host_os']
                     # Give VM 1/4 system memory & access to all cpu cores on the host
                     if host =~ /darwin/
@@ -83,13 +83,13 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
                     else # sorry Windows folks, I can't help you
                         mem = 1024
                     end
-                    vb.customize ["modifyvm", :id, "--memory", mem]
+                    vb.memory  = mem
                 else
-                    vb.memory   = server["ram"]
+                     vb.memory = server["ram"]
                 end
 
 
-                if server["cpus"] = "auto"
+                if server["cpus"] == "auto"
                     host = RbConfig::CONFIG['host_os']
                     # Give VM 1/4 system memory & access to all cpu cores on the host
                     if host =~ /darwin/
@@ -99,11 +99,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
                     else # sorry Windows folks, I can't help you
                         cpus = 2
                     end
-                    vb.customize ["modifyvm", :id, "--cpus", cpus]
+                    vb.cpus   = cpus
                 else
                     vb.cpus   = server["cpus"]
                 end
-
 
             end
 
