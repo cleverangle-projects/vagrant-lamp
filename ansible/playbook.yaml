@@ -405,7 +405,7 @@
 # ··· Add zsh git prompt to .zshrc
     - name      : Get zsh git prompt config file
       get_url   :
-        url     : "https://raw.githubusercontent.com/Mayccoll/Linux-Utils/master/Install_Files/git-prompt"
+        url     : "https://gitlab.com/Mayccoll/Linux-Utils/raw/master/Install_Files/git-prompt"
         dest    : "{{ home }}/git-prompt"
 
     - name      : Add zsh git prompt config file to .zshrc
