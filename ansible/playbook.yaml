@@ -362,7 +362,7 @@
 # ··· Create file .zshrc
     - name      : Create file .zshrc
       get_url   :
-        url     : "https://raw.githubusercontent.com/Mayccoll/Linux-Utils/master/Install_Files/zshrc"
+        url     : "https://gitlab.com/Mayccoll/Linux-Utils/raw/master/Install_Files/zshrc"
         dest    : "{{ home }}/.zshrc"
 
     - name      : Change .zshrc owner and group
