@@ -312,10 +312,10 @@
     # ### Copy Index html
 # ··············································································
 
-    - name      : Copy Index Html
-      template  :
-        src     : templates/index.html
-        dest    : /var/www/html/
+ #   - name      : Copy Index Html
+ #     template  :
+ #       src     : templates/index.html
+ #       dest    : /var/www/html/
 
 # ··············································································
     # ### Install zsh
